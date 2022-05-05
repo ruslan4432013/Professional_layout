@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    background: #222222;
+    height: 74px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.header i {
+    color: #e8e8e8;
+}
+
+.userIcon,
+.cartIcon {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .userIcon,
+    .cartIcon {
+        display: inline;
+    }
+}
+
+.userIcon {
+    margin-left: 25px;
+    margin-right: 42px;
+}
+
+.searchIcon {
+    margin-left: 41px;
+}
+
+.cartIconWrap {
+    position: relative;
+}
+
+.cartIconWrap span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #f16d7f;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -19px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.newArrivals {
+    background: #f8f3f4;
+    min-height: 148px;
+}
+
+.newArrivals h1 {
+    margin: 24px 0 32px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
+
+@media (min-width: 768px) {
+    .newArrivals h1 {
+        margin: 0;
+    }
+}
+
+.newArrivals .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: inherit;
+}
+
+@media (min-width: 768px) {
+    .newArrivals .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+    .newArrivals .container {
+        padding: 0 16px;
+    }
+}
+
+
+.newArrivals nav a,
+.newArrivals nav span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.newArrivals nav a {
+    text-decoration: none;
+}
+
+.newArrivals nav span {
+    margin: 0 3px;
+}
+
+.newArrivals nav a:last-of-type {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f16d7f;
+}
+
+.filters {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 1600px) {
+    .filters {
+        margin-top: 51px;
+        margin-bottom: 64px;
+    }
+}
+
+.filters .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+@media (min-width: 768px) {
+    .filters .container {
+        padding: 0 16px;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .filters .container {
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+}
+
+.filtersRight {
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6F6E6E;
+}
+
+@media (min-width: 1600px) {
+    .filtersRight {
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 320px;
+    }
+
+}
+
+.filtersRight img {
+    position: relative;
+    bottom: 1px;
+    margin-left: 9px;
+}
+
+.filtersRight > div:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media (min-width: 375px) {
+    .filtersRight > div:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+.filtersLeft span {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .filtersLeft span {
+        display: inline;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: black;
+    }
+}
+
+.filtersLeft img {
+    width: 37px;
+    height: 25px;
+}
+
+@media (min-width: 768px) {
+    .filtersLeft img {
+        width: 15px;
+        height: 10px;
+        margin-left: 11px;
+    }
+}
